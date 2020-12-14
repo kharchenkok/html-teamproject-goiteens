@@ -1,0 +1,94 @@
+ .review-section {
+   padding: 55px 0 5px;
+
+   @media (min-width: 768px) {
+     padding: 220px 0 100px;
+   }
+
+   @media (min-width: 1440px) {
+     padding: 160px 0 100px;
+   }
+ }
+
+ .review-title {
+   margin-bottom: 40px;
+   text-align: center;
+
+   @media (min-width: 768px) {
+     margin-bottom: 60px;
+   }
+
+   @media (min-width: 1440px) {
+     margin-bottom: 80px;
+   }
+
+ }
+
+ .review-list {
+
+   &__title {
+     @include font(21px, 700, 30px, $main-font-color);
+     letter-spacing: 0.63px;
+     margin-bottom: 13px;
+   }
+
+   &__about {
+
+     text-align: center;
+     margin-bottom: 40px;
+     padding: 0 22px;
+     line-height: 24px;
+     letter-spacing: 0.42px;
+
+     @media (min-width: 768px) {
+
+       text-align: center;
+       padding: 0 39px;
+       margin-bottom: 52px;
+       font-size: 16px;
+       line-height: 30px;
+       letter-spacing: 0.48px;
+
+     }
+
+     @media (min-width: 1440px) {
+       padding: 0 25px;
+     }
+   }
+
+   &__link {
+     color: $main-decoration-color;
+     font-weight: 400;
+     text-decoration: underline;
+
+     &_galis {
+       display: block;
+     }
+   }
+ }
+
+
+ .review__item {
+
+   &-foto {
+     border: 7px solid rgb(234, 241, 249);
+     border-radius: 50%;
+     margin: 0 auto 22px;
+   }
+ }
+
+ .review__foto-wrapper {
+   margin-bottom: 22px;
+   padding-top: 60px;
+
+   &::after {
+     content: '';
+     background-image: url('../images/rev-images/quotes.jpg');
+     display: block;
+     width: 20px;
+     height: 20px;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 0 auto;
+   }
+ }
